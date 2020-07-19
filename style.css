@@ -15,17 +15,17 @@ body {
     color: white;
 }
 
-.box-img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
 
 #foto {
 width: 35%;
 }
 
+.box-img {
+    border-radius: 40%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
 
 .box h1 {
     font-size: 40px;
