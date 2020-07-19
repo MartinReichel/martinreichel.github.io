@@ -15,16 +15,17 @@ body {
     color: white;
 }
 
-
-#foto {
-width: 35%;
-}
-
-.box-img {
-    border-radius: 40%;
+.box span {
+    display: inline-block;
     width: 200px;
     height: 200px;
+    margin: 0px;
+    border-radius: 50%;
     overflow: hidden;
+}
+
+.box span img {
+    width: 100%;
 }
 
 .box h1 {
