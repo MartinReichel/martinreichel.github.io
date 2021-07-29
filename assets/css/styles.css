@@ -321,6 +321,14 @@ img{
   transform: scale(1.1);
 }
 
+.skills__book{
+  width: 35%;
+}
+
+.ilustrator{
+  color: black;
+}
+
 /* ===== CONTACT =====*/
 .contact__input{
   width: 100%;
@@ -360,8 +368,13 @@ img{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
-a{
+.amail{
   color: #fff;
+}
+
+.next__icon{
+  margin-right: var(--mb-1);
+  color: var(--first-color);
 }
 
 /* ===== FOOTER =====*/
