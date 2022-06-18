@@ -1,0 +1,84 @@
+<!-- Prohlášení o cookies -->
+<style>
+    #eu-cookies {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background-color: darkblue;
+        z-index: 1000;
+        padding: 8px;
+        border-top: 1px solid darkblue;
+        text-align: center;
+    }
+</style>
+
+<script>
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1, c.length);
+            }
+            if (c.indexOf(nameEQ) === 0) {
+                return c.substring(nameEQ.length, c.length);
+            }
+        }
+        return null;
+    }
+
+    function createCookie(name, value, days) {
+        var expires;
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toGMTString();
+        }
+        else {
+            expires = "";
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var cookiesBarConfirm = document.getElementById('eu-cookie-confirm')
+        cookiesBarClickerFn = function () {
+            createCookie('eu-cookies', 'true');
+            cookiesBarDiv.style.visibility = 'hidden';
+        }
+        cookiesBarConfirm.addEventListener('click', cookiesBarClickerFn);
+
+        var cookiesBarCheck = readCookie('eu-cookies');
+        var cookiesBarDiv = document.getElementById('eu-cookies');
+        if (cookiesBarCheck != null) {
+            cookiesBarDiv.style.visibility = 'hidden';
+        }
+    });
+</script>
+
+<div id="eu-cookies">
+    <div class="container">
+        <div class="row">
+            <small>
+                Tento web používá k poskytování služeb, personalizaci reklam a analýze
+                návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte.
+                <button id="eu-cookie-confirm" class="btn btn-xs btn-success">V pořádku</button>
+                Další info:
+                <a href="http://example.cz/prohlaseni-o-zpracovani-osobnich-udaju.html"
+                    class="btn btn-xs btn-default">Můj web</a>
+                <a href="https://www.google.com/policies/technologies/cookies/"
+                    class="btn btn-xs btn-default">GOOGLE</a>
+            </small>
+        </div>
+        <noscript>
+            <style>
+                #eu-cookies {
+                    display: none
+                }
+            </style>
+        </noscript>
+    </div>
+</div>
