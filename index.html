@@ -3,285 +3,412 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta id="metaDescription" name="description"
-        content="Martin Reichel ✓ Školství ✓ Školní systém ✓ Programování ✓ Kniha ✓ Úvahy o našem školství ✓ Já už nemůžu ✓ Kódování ✓">
-    <link rel="shortcut icon" href="assets/img/perfil.PNG" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Martin Reichel · IT Junior | Sítě &amp; Kybernetická bezpečnost</title>
+    <meta name="description"
+        content="Martin Reichel – IT nadšenec hledající první profesní příležitost v oblasti správy sítí nebo kybernetické bezpečnosti. Vlastní praxe s Proxmoxem, TrueNAS, VLAN, TCP/IP a absolvované kurzy NÚKIB a BOIT.">
+    <meta name="keywords"
+        content="Martin Reichel, IT junior, správa sítí, kybernetická bezpečnost, network administrator, cyber security, Proxmox, TrueNAS, CCNA, NÚKIB, BOIT, helpdesk, Linux, Windows, TCP/IP, VLAN">
+    <meta name="author" content="Martin Reichel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://martinreichel.github.io/">
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon — logo zůstává v záložce prohlížeče -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/img/favicon-192.png">
 
-    <title>Martin Reichel</title>
-
-    <meta property="og:locale" content="cs_CZ">
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Martin Reichel - Já už nemůžu - úvahy o našem školství">
-    <meta property="og:description" content="Dělám to, v co věřím.">
     <meta property="og:url" content="https://martinreichel.github.io/">
-    <meta property="og:site_name" content="https://martinreichel.github.io/">
-    <meta property="article:publisher" content="www.linkedin.com/in/martin-reichel">
-    <meta property="og:image" content="assets/img/perfil.PNG">
+    <meta property="og:title" content="Martin Reichel · IT Junior | Sítě &amp; Kybernetická bezpečnost">
+    <meta property="og:description"
+        content="IT nadšenec hledající první profesní příležitost v oblasti správy sítí nebo kybernetické bezpečnosti.">
+    <meta property="og:image" content="https://martinreichel.github.io/assets/img/photo.png">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Martin Reichel">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Martin Reichel · IT Junior | Sítě &amp; Kybernetická bezpečnost">
+    <meta name="twitter:description"
+        content="IT nadšenec hledající první profesní příležitost v oblasti správy sítí nebo kybernetické bezpečnosti.">
+    <meta name="twitter:image" content="https://martinreichel.github.io/assets/img/photo.png">
+
+    <!-- GEO -->
+    <meta name="geo.region" content="CZ">
+    <meta name="geo.placename" content="Česká republika">
+    <meta name="ICBM" content="50.0755, 14.4378">
+
+    <!-- Strukturovaná data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Martin Reichel",
+        "url": "https://martinreichel.github.io/",
+        "image": "https://martinreichel.github.io/assets/img/photo.png",
+        "email": "martin.reichel.cz@gmail.com",
+        "jobTitle": "IT Junior",
+        "description": "IT nadšenec se zaměřením na správu sítí a kybernetickou bezpečnost.",
+        "knowsAbout": ["Správa počítačových sítí","Kybernetická bezpečnost","Virtualizace","Proxmox VE","TrueNAS","TCP/IP","VLAN","Linux","Windows","Hyper-V"],
+        "sameAs": ["https://linkedin.com/in/martin-reichel","https://github.com/MartinReichel"],
+        "address": { "@type": "PostalAddress", "addressCountry": "CZ" }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Martin Reichel</a>
-            </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Domů</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">O mně</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Schopnosti</a></li>
-                    <!--
-                    <li class="nav__item"><a href="#work" class="nav__link">Kniha</a></li>
-                    -->
-                    <li class="nav__item"><a href="#contact" class="nav__link">Kontakty</a></li>
-                </ul>
-            </div>
+    <div class="grid-bg"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+    <!-- NAVIGACE -->
+    <header>
+        <nav>
+            <a href="#home" class="nav__logo">
+                <img src="assets/img/logo.png" alt="MR logo" class="nav__logo-img">
+                <span class="nav__logo-text">Martin Reichel<span> · IT</span></span>
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Domů</a></li>
+                <li><a href="#about">O mně</a></li>
+                <li><a href="#skills">Dovednosti</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle" aria-label="Otevřít menu">
+                <span></span><span></span><span></span>
             </div>
         </nav>
     </header>
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Dobrý den,<br><span class="home__title-color"> vítejte </span>na mé
-                    stránce
-                </h1>
-                <!--
-                    <a href="https://martinreichel.wixsite.com/blog" class="button">Blog</a>
-                -->
+    <main>
+
+        <!-- DOMŮ -->
+        <section id="home">
+            <p class="hero__label">IT · Sítě · Virtualizace · Cyber Security</p>
+            <h1 class="hero__title">
+                Martin<br>
+                <span class="accent">Reichel</span><span class="dim">.</span>
+                <span class="blink" aria-hidden="true"></span>
+            </h1>
+            <p class="hero__desc">
+                IT mě baví od základky. Doma jsem provozoval vlastní lab se sítěmi, servery a virtualizací. Hledám první
+                profesní příležitost, kde z toho bude pořádná práce.
+            </p>
+            <div class="hero__cta">
+                <a href="#contact" class="btn btn-primary">Kontaktujte mě</a>
+                <a href="#skills" class="btn btn-ghost">Co umím</a>
             </div>
-
-            <div class="home__social">
-                <a href="https://linkedin.com/in/martin-reichel" target="blank" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/MartinReichel" target="blank" class="home__social-icon"><i
-                        class='bx bxl-github'></i></a>
-                <!--
-                <a href="https://martinreichel.wixsite.com/blog" target="blank" class="home__social-icon"><i
-                        class='bx bxl-wordpress'></i></a>
-                -->
-            </div>
-
-            <div class="home__img">
-                <img src="assets/img/perfil.PNG" alt="">
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">O mně</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Jmenuji se Martin</h2>
-                    <p class="about__text">Považuji se za atypicky typického mileniála. Nezajímají mě v práci sedací
-                        vaky, fotbálek ani jídlo zdarma.
-                        Smysl práce, dobrý kolektiv a možnost rozvoje, jsou pro mě však zásadní. <br> <br>
-
-                        Jsem nadšenec do nových technologii, hlavně v oblasti IT. Do roku 2012 jsem programoval
-                        (kódoval) v HTML, PHP, CSS a Flash. Dnes už se však o technologie zajímám spíše okrajově,
-                        jelikož jsou pro mě jiné věci přednější.
-                    </p>
-                </div>
+            <div class="hero__social" aria-label="Sociální sítě">
+                <a href="https://linkedin.com/in/martin-reichel" target="_blank" rel="noopener noreferrer">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/MartinReichel" target="_blank" rel="noopener noreferrer">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="#" class="js-mail">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,12 2,6" />
+                    </svg>
+                    E-mail
+                </a>
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Schopnosti</h2>
+        <div class="divider">
+            <hr>
+        </div>
 
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Pracovní dovednosti</h2>
-                    <p class="skills__text">Dlouhé roky se zabývám kontaktem s lidmi a díky aktivnímu přístupu, jsem se
-                        toho již mnoho naučil. <br> <!-- <br> Školský systém, jaký se využívá dnes, již je nevyhovující pro
-                        svět
-                        21. stolení, proto již od roku
-                        2015 pracuji na úvahové knize o českém školství. -->
-                    </p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-data skills__icon'></i>
-                            <span class="skills__name">Analýza</span>
-                        </div>
-                        <div class="skills__bar skills__html">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">95 %</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-file skills__icon'></i>
-                            <span class="skills__name">Strategie</span>
-                        </div>
-                        <div class="skills__bar skills__css">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85 %</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-chalkboard skills__icon'></i>
-                            <span class="skills__name">Výuka</span>
-                        </div>
-                        <div class="skills__bar skills__js">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65 %</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">Příprava projektů</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85 %</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/img/work3.png" alt="" class="skills__img">
-                </div>
-            </div>
-        </section>
-
-        <!--===== WORK =====-->
-        <!--
-        <section class="work section" id="work">
-            <h2 class="section-title">Kniha</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/book.png" alt="Kniha">
-                    <br>
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Já už nemůžu - úvahy o českém školství</h2>
-                    <p class="about__text">Školství se za poslední stovky let nezměnilo. Sice se ve školách místo krbů
-                        používá ústřední topení a některé školy mají místo tabule a křídy interaktivní tabuli, ale po
-                        stránce učení se nic nezměnilo. Naopak učiva přibývá a to jsme díky současné moderní technologii
-                        denně vystaveni většímu množství informací, než kdy dříve.
-                    </p>
-                    <br>
-                    <p>Proto již od roku 2015 pracuji na úvahové knize, která má uzákat, jak mnohé ze způsobu které se
-                        do dnes využívají, jsou kontraproduktivní a jsou již dávno vyvráceny.
-                    </p>
-                    <br>
+        <!-- O MNĚ -->
+        <section id="about">
+            <p class="sec-label reveal">O mně</p>
+            <h2 class="sec-title reveal">Trochu o mně<span style="color:var(--accent)">.</span></h2>
+            <div class="about__grid">
+                <div class="about__text reveal">
                     <p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-book skills__icon'></i>
-                            <span class="skills__name">Kniha je hotová na</span>
-                        </div>
-                        <div class="skills__bar skills__book">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">35 %</span>
-                        </div>
-                    </div>
+                        IT je pro mě přirozené prostředí, ne jen koníček, ale způsob, jak přemýšlím o problémech.
+                        Fascinuje mě, jak systémy drží pohromadě: síť, server, bezpečnostní vrstva. A co se stane, když
+                        jedna z nich selže.
                     </p>
-                    -->
-        <!-- 
-                    <p>Obrázky s tématem knihy:</p> <br>
-                </div>
-            </div>
- 
-          <div class="work__container bd-grid">
-                <div class="work__img">
-                    <a href="assets/img/1.jpg" target="blank"><img src="assets/img/1.jpg" alt=""></a>
-                </div>
-
-                <div class="work__img">
-                    <a href="assets/img/2.jpg" target="blank"><img src="assets/img/2.jpg" alt=""></a>
-                </div>
-                <div class="work__img">
-                    <a href="assets/img/3.jpg" target="blank"><img src="assets/img/3.jpg" alt=""></a>
-                </div>
-
-            </div>
-
-
-                    <div class="contact__container bd-grid">
-                        <div class="email">
-                            <br>
-                            <p><i class='bx bx-paint next__icon'></i> Ilustrace z <a
-                                    href="https://www.facebook.com/OtvorteSiOci" target="_blank"
-                                    class="ilustrator">Otvorte si
-                                    oči</a></p>
-                        </div>
+                    <p>
+                        Řadu věcí jsem si vyzkoušel vlastníma rukama na domácím labu. Stavěl jsem síť, spravoval
+                        virtualizační server na Proxmoxu a provozoval NAS. Lab už nepoužívám, ale NAS a různé systémy
+                        mám stále v provozu.
+                    </p>
+                    <p>
+                        Za sebou mám roky práce v obchodě a korporátním prostředí. Naučil jsem se pracovat samostatně i
+                        v týmu, v prostředí s přesně danými pravidly i tam, kde měl člověk volnost rozhodovat. Teď chci
+                        tyto dovednosti přenést do IT.
+                    </p>
+                    <div class="tag-row">
+                        <span class="tag hi">Správa sítí</span>
+                        <span class="tag hi">Kybernetická bezpečnost</span>
+                        <span class="tag">Proxmox</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Windows</span>
+                        <span class="tag">TrueNAS / OMV</span>
+                        <span class="tag">Virtualizace</span>
+                        <span class="tag">TCP/IP</span>
                     </div>
-ß-->
-        </section>
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Kontakty</h2>
-
-            <div class="contact__container bd-grid">
-                <div class="email">
-                    <p><i class='bx bx-mail-send next__icon'></i> E-mail:</p>
                 </div>
 
-                <p>
-                    <a href="mailto:martin.reichel.cz@gmail.com" class="button">martin.reichel.cz@gmail.com</a>
-                </p>
-
+                <div class="terminal reveal">
+                    <div class="t-bar">
+                        <div class="t-dot r"></div>
+                        <div class="t-dot y"></div>
+                        <div class="t-dot g"></div>
+                        <span class="t-title">martin@home-lab:~</span>
+                    </div>
+                    <div class="t-body">
+                        <div><span class="tp">$ </span><span class="tc">cat homelab.conf</span></div>
+                        <div class="tok">&#10003; Proxmox VE &mdash; hypervisor + LXC kontejnery</div>
+                        <div class="tok">&#10003; TrueNAS / OMV &mdash; NAS &amp; storage</div>
+                        <div class="tok">&#10003; Vlastní LAN, VLAN segmentace</div>
+                        <div class="tok">&#10003; VMware, Hyper-V, VirtualBox</div>
+                        <br>
+                        <div><span class="tp">$ </span><span class="tc">cat os.list</span></div>
+                        <div class="tok">&#10003; Windows (+ Windows Server)</div>
+                        <div class="tok">&#10003; Linux &mdash; různé distribuce</div>
+                        <div class="tok">&#10003; macOS</div>
+                        <br>
+                        <div><span class="tp">$ </span><span class="tc">cat certifikace.log</span></div>
+                        <div class="tok">&#10003; NÚKIB &mdash; Manažer kyb. bezpečnosti</div>
+                        <div class="tok">&#10003; BOIT &mdash; Specialista kyb. bezpečnosti</div>
+                        <div class="tok">&#10003; Cisco CCNA &mdash; přípravný kurz dokončen</div>
+                        <br>
+                        <div><span class="tp">$ </span><span class="tc">./status<span class="blink"
+                                    aria-hidden="true"></span></span></div>
+                        <div class="tok">[ ONLINE &middot; hledám první IT pozici ]</div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <div class="divider">
+            <hr>
+        </div>
+
+        <!-- DOVEDNOSTI -->
+        <section id="skills">
+            <p class="sec-label reveal">Dovednosti</p>
+            <h2 class="sec-title reveal">Co umím<span style="color:var(--accent)">.</span></h2>
+
+            <div class="skill-grid">
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-head">
+                        <div class="skill-name"><span class="skill-icon" aria-hidden="true">🌐</span> Počítačové sítě
+                        </div>
+                        <span class="badge course">📋 Kurzy + praxe</span>
+                    </div>
+                    <p class="skill-desc">Doma jsem provozoval vlastní síťovou infrastrukturu — router, switch, VLAN
+                        segmentace, DHCP, DNS. Rozumím TCP/IP (CCNA úroveň) a dokážu identifikovat a řešit běžné síťové
+                        problémy.</p>
+                    <div class="pill-row">
+                        <span class="pill">TCP/IP</span>
+                        <span class="pill">VLAN</span>
+                        <span class="pill">DHCP / DNS</span>
+                        <span class="pill">LAN / WAN</span>
+                        <span class="pill">Routing &amp; Switching</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-head">
+                        <div class="skill-name"><span class="skill-icon" aria-hidden="true">⚙️</span> Virtualizace &amp;
+                            Servery</div>
+                        <span class="badge lab">🧪 Vlastní praxe</span>
+                    </div>
+                    <p class="skill-desc">Mám aktivní zkušenosti s Proxmox VE, VMware, Hyper-V a VirtualBoxem. Aktuálně
+                        využívám hlavně Hyper-V. NAS provozuji na TrueNAS. Dříve jsem pracoval i s OpenMediaVault a
+                        Parallels.</p>
+                    <div class="pill-row">
+                        <span class="pill">Proxmox VE</span>
+                        <span class="pill">TrueNAS</span>
+                        <span class="pill">Hyper-V</span>
+                        <span class="pill">VMware</span>
+                        <span class="pill">VirtualBox</span>
+                        <span class="pill">OMV</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-head">
+                        <div class="skill-name"><span class="skill-icon" aria-hidden="true">🛡️</span> Kybernetická
+                            bezpečnost</div>
+                        <span class="badge course">📋 Kurzy + praxe</span>
+                    </div>
+                    <p class="skill-desc">Absolvoval jsem kurzy NÚKIB a BOIT. Rozumím principům ochrany sítí, řízení
+                        přístupu a analýze hrozeb. Znalosti aplikuji při zabezpečení vlastní infrastruktury —
+                        segmentace, firewall, access control.</p>
+                    <div class="pill-row">
+                        <span class="pill">Síťová bezpečnost</span>
+                        <span class="pill">Firewall</span>
+                        <span class="pill">Řízení přístupu</span>
+                        <span class="pill">Analýza hrozeb</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-head">
+                        <div class="skill-name"><span class="skill-icon" aria-hidden="true">🖥️</span> Operační systémy
+                        </div>
+                        <span class="badge lab">🧪 Každodenní praxe</span>
+                    </div>
+                    <p class="skill-desc">Primárně pracuji na Windows, znám i Windows Server. S Linuxem mám zkušenosti z
+                        domácího labu — orientuji se v terminálu, zvládám běžnou práci v CLI. Rovněž mám zkušenosti s
+                        macOS.</p>
+                    <div class="pill-row">
+                        <span class="pill">Windows</span>
+                        <span class="pill">Windows Server</span>
+                        <span class="pill">Linux</span>
+                        <span class="pill">macOS</span>
+                        <span class="pill">CLI</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="cert-row reveal">
+                <div class="cert">
+                    <div class="cert-icon" aria-hidden="true">🎓</div>
+                    <div>
+                        <div class="cert-name">NÚKIB</div>
+                        <div class="cert-sub">Manažer kyb. bezpečnosti</div>
+                    </div>
+                </div>
+                <div class="cert">
+                    <div class="cert-icon" aria-hidden="true">🔒</div>
+                    <div>
+                        <div class="cert-name">BOIT</div>
+                        <div class="cert-sub">Specialista kyb. bezpečnosti</div>
+                    </div>
+                </div>
+                <div class="cert">
+                    <div class="cert-icon" aria-hidden="true">📡</div>
+                    <div>
+                        <div class="cert-name">Cisco CCNA</div>
+                        <div class="cert-sub">přípravný kurz dokončen</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legend reveal">
+                <span class="badge lab">🧪 Vlastní praxe</span> znalosti ověřené prakticky na vlastních zařízeních
+                &nbsp;&middot;&nbsp;
+                <span class="badge course">📋 Kurzy + praxe</span> absolvované certifikace doplněné vlastním testováním
+            </div>
+        </section>
+
+        <div class="divider">
+            <hr>
+        </div>
+
+        <!-- KONTAKT -->
+        <section id="contact">
+            <p class="sec-label reveal">Kontakt</p>
+            <h2 class="sec-title reveal">Ozvěte se<span style="color:var(--accent)">.</span></h2>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="avail">Dostupný · otevřený nabídkám</div>
+                    <p>
+                        Hledám první IT pozici — helpdesk, junior síťový administrátor nebo podpora v oblasti
+                        bezpečnosti. Za sebou mám několik kurzů, z nichž některé nebyly čistě teoretické. Věci jsem si
+                        ověřoval sám na vlastních zařízeních. Pokud hledáte někoho, kdo přijde s chutí učit se a
+                        pracovat naplno, dejte vědět.
+                    </p>
+                    <a href="#" class="btn btn-primary js-mail">Napište mi</a>
+                </div>
+
+                <div class="contact-links reveal">
+                    <a href="#" class="clink js-mail">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,12 2,6" />
+                        </svg>
+                        <span>E-mail</span> martin.reichel.cz&#64;gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/martin-reichel" target="_blank" rel="noopener noreferrer"
+                        class="clink">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        <span>LinkedIn</span> /in/martin-reichel
+                    </a>
+                    <a href="https://github.com/MartinReichel" target="_blank" rel="noopener noreferrer" class="clink">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                        </svg>
+                        <span>GitHub</span> /MartinReichel
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Martin Reichel</p>
-        <div class="footer__social">
-            <a href="https://linkedin.com/in/martin-reichel" target="blank" class="footer__icon"><i
-                    class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/MartinReichel" target="blank" class="footer__icon"><i
-                    class='bx bxl-github'></i></a>
-            <!--
-            <a href="https://martinreichel.wixsite.com/blog" target="blank" class="footer__icon"><i
-                    class='bx bxl-wordpress'></i></a>
-            -->
+    <!-- PATIČKA -->
+    <footer>
+        <div class="footer__inner">
+            <p>© 2026 Martin Reichel · Všechna práva vyhrazena</p>
+            <img src="assets/img/logo.png" alt="Martin Reichel" class="footer__logo">
         </div>
-        <p> Copyright &#169;
-            <!-- © --> 2025 Martin Reichel. Všechna práva vyhrazena.
-        </p>
     </footer>
 
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
-</body>
+    <script>
+        /* Záložní reveal */
+        (function () {
+            function revealAll() {
+                var wh = window.innerHeight;
+                document.querySelectorAll('.reveal').forEach(function (el) {
+                    if (el.getBoundingClientRect().top < wh - 40) el.classList.add('visible');
+                });
+            }
+            window.addEventListener('scroll', revealAll, { passive: true });
+            window.addEventListener('resize', revealAll, { passive: true });
+            window.addEventListener('load', revealAll);
+            setTimeout(revealAll, 50);
+        })();
 
-</html>
+        /* E-mail — složený v JS, Cloudflare ho nezachytí */
+        (function () {
+            var u = 'martin.reichel.cz';
+            var d = 'gmail.com';
+            var m = 'mailto:' + u + '\u0040' + d;
+            document.querySelectorAll('.js-mail').forEach(function (el) {
+                el.href = m;
+            });
+        })();
+    </script>
+    <script>
+        /* Záložní reveal — funguje nezávisle na main.js */
+        (function () {
+            function revealAll() {
+                var wh = window.innerHeight;
+                document.querySelectorAll('.reveal').forEach(function (el) 
