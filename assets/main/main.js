@@ -36,14 +36,18 @@
     var sections = document.querySelectorAll('section[id]');
     var navItems = document.querySelectorAll('.nav__links a');
 
-    window.addEventListener('scroll', function () {
+    function updateActiveNav() {
         var current = '';
         sections.forEach(function (s) {
-            if (window.scrollY >= s.offsetTop - 90) current = s.id;
+            var rect = s.getBoundingClientRect();
+            if (rect.top <= 90) current = s.id;
         });
         navItems.forEach(function (a) {
             a.classList.toggle('active', a.getAttribute('href') === '#' + current);
         });
-    }, { passive: true });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
 
 })();
