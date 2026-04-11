@@ -292,12 +292,41 @@ section {
 .legend { margin-top: 1.5rem; font-size: 0.78rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; width: 100%; justify-content: flex-start; }
 
 /* ---------- KONTAKT ---------- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-.contact-info p { color: var(--text); margin-bottom: 2rem; line-height: 1.85; }
-.contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
-.clink { display: flex; align-items: center; gap: 0.75rem; font-family: var(--mono); font-size: 0.8rem; color: var(--text); text-decoration: none; padding: 0.85rem 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; transition: all 0.2s; }
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-left p { color: var(--text); margin-bottom: 1.5rem; line-height: 1.85; }
+
+.contact-links { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; }
+.clink {
+    display: flex; align-items: center; gap: 0.75rem;
+    font-family: var(--mono); font-size: 0.8rem;
+    color: var(--text); text-decoration: none;
+    padding: 0.75rem 1rem;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 4px; transition: all 0.2s;
+    width: fit-content;
+    min-width: 280px;
+}
 .clink:hover { border-color: var(--accent); color: var(--accent); }
 .clink span  { color: var(--muted); margin-right: 0.2rem; }
+
+.contact-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-illustration img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 8px 8px 40px rgba(0,0,0,0.6), -4px 0 30px rgba(0,229,255,0.08);
+}
 
 .avail { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.72rem; color: var(--green); background: rgba(40,200,64,0.08); border: 1px solid rgba(40,200,64,0.25); border-radius: 99px; padding: 0.35rem 0.85rem; margin-bottom: 1.5rem; }
 .avail::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--green); animation: pulse-dot 2s ease infinite; }
@@ -336,6 +365,18 @@ footer p { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
         order: 2;
     }
     .hero__content {
+        order: 1;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-illustration {
+        width: 100%;
+        max-width: 300px;
+        margin: 2rem auto 0;
+        order: 2;
+    }
+    .contact-left {
         order: 1;
     }
 }
